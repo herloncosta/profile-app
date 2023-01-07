@@ -1,3 +1,4 @@
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Techs } from "./components/Technologies";
 import "./styles/globals.sass";
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <Techs />
+      <Footer />
     </div>
   );
 }
