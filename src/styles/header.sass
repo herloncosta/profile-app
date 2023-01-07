@@ -1,16 +1,29 @@
 header
   .app-title
-    text-align: center
     padding: 2rem 0
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: .6rem
 
   .user-info
     display: flex
     align-items: center
+    flex-direction: column
 
     img
-      width: 80px
-      margin-right: 2rem
+      width: 7.5rem
       border-radius: 50%
+      border: 0.25rem solid #aaa
 
-    h1
-      font-size: 24px
+    div
+      text-align: center
+
+      h1
+        font-size: 1.5rem
+        margin-top: 1rem
+
+      p
+        margin-top: .4rem
+        letter-spacing: .3rem
+        text-transform: uppercase

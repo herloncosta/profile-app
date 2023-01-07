@@ -1,13 +1,20 @@
 import { Technology } from "./Technology";
-import { DiCss3, DiHtml5, DiSass, DiNodejsSmall } from "react-icons/di";
+import {
+  DiCss3,
+  DiHtml5,
+  DiSass,
+  DiNodejsSmall,
+  DiReact,
+} from "react-icons/di";
 import {
   SiJavascript,
   SiBootstrap,
   SiTypescript,
   SiTailwindcss,
+  SiNextdotjs,
 } from "react-icons/si";
 
-import "../styles/technologyes.sass";
+import "../styles/technologies.sass";
 
 export function Techs() {
   return (
@@ -16,7 +23,7 @@ export function Techs() {
         <h2>Tecnologias</h2>
       </div>
       <div className="tech-group">
-        <Technology name="HTML5" text="#000" bg="#e76f51" icon={<DiHtml5 />} />
+        <Technology name="HTML5" bg="#f14317" icon={<DiHtml5 />} />
         <Technology name="CSS3" bg="#0496ff" icon={<DiCss3 />} />
         <Technology
           name="Javascript"
@@ -39,8 +46,13 @@ export function Techs() {
           bg="#0ead69"
           icon={<DiNodejsSmall />}
         />
-        <Technology name="ReactJS" />
-        <Technology name="NextJS" />
+        <Technology
+          name="ReactJS"
+          text="#000"
+          bg="#61DAFB"
+          icon={<DiReact />}
+        />
+        <Technology name="NextJS" bg="#04051a" icon={<SiNextdotjs />} />
       </div>
     </section>
   );
