@@ -13,8 +13,8 @@ export function Header() {
       <div className="user-info">
         <img src={profile} alt="profile image" />
         <div>
-          <h1>Herlon Costa</h1>
-          <p>Web Developer</p>
+          <h1 className="user-name">Herlon Costa</h1>
+          <p className="user-description">Web Developer</p>
         </div>
       </div>
     </header>

@@ -22,9 +22,9 @@ import "../styles/technologies.sass";
 
 export function Techs() {
   return (
-    <section>
+    <section className="section-techs">
       <div>
-        <h2>Tecnologias</h2>
+        <h2>Technologies</h2>
       </div>
       <div className="tech-group">
         <Technology name="HTML5" bg="#E96228" icon={<DiHtml5 />} />
