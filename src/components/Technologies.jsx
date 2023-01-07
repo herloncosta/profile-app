@@ -47,7 +47,7 @@ export function Techs() {
         <Technology
           name="Node"
           text="#000"
-          bg="##3C823B"
+          bg="#3C823B"
           icon={<DiNodejsSmall />}
         />
         <Technology name="Express" text="#000" icon={<SiExpress />} />
