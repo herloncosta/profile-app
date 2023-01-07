@@ -1,7 +1,19 @@
-# Profile App
+# Developer Profile
 
-Página mobile com propósito de servir como currículo digital.
+## Page mobile com propósito de servir como currículo digital.
 
-## Desenvolvedores
+### Tecnologias utilizadas
 
-Herlon Costa
+- React
+- Sass
+- Vite
+
+### Bibliotecas utilizadas
+
+- React Icons
+
+---
+
+Fique a vontade para clonar o repositório e criar o seu perfil personalizado. Se achar relevante, compartilha o link comigo, vou ficar feliz por ver o resultado!
+
+Vamos pra cima!
