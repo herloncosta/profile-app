@@ -1,9 +1,11 @@
+@use "variables"
+@use "mixins"
+
 span
-  color: #fff
-  background: #aaa
+  color: variables.$light
+  background: variables.$gray
   padding: 5px
   border-radius: 4px
-  display: flex
-  align-items: center
+  @include mixins.itemsCenter
   gap: .2rem
   font-weight: 600

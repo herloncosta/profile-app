@@ -1,29 +1,28 @@
+@use "variables"
+@use "mixins"
+
 header
-  border-bottom: 0.125rem solid #00b7ff
-  padding-bottom: 3rem
+  @include mixins.lineSeparator
 
   .app-title
-    padding: 2rem 0
-    display: flex
-    align-items: center
-    justify-content: center
+    @include mixins.center
     gap: .6rem
+    padding: 2rem 0
 
   .user-info
-    display: flex
-    align-items: center
+    @include mixins.itemsCenter
     flex-direction: column
 
     img
-      width: 7.5rem
+      width: 9rem
       border-radius: 50%
-      border: 0.25rem solid #00b7ff
+      border: 0.25rem solid variables.$primary
 
     div
       text-align: center
 
       .user-name
-        color: #00b7ff
+        color: variables.$primary
         font-size: 1.5rem
         margin-top: 1rem
 
