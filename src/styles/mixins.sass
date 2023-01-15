@@ -6,9 +6,10 @@
   text-transform: uppercase
   font-size: 16px
   margin-top: 1.5rem
+  @include textBold
 
 @mixin lineSeparator
-  padding-bottom: 2rem
+  padding-bottom: 1.5rem
   border-bottom: .125rem solid variables.$primary
 
 @mixin center
@@ -19,3 +20,11 @@
 @mixin itemsCenter
   display: flex
   align-items: center
+
+@mixin textBold
+  font-family: 'Poppins', sans-serif
+  font-weight: 600
+
+@mixin textLight
+  font-family: 'Poppins', sans-serif
+  font-weight: 400

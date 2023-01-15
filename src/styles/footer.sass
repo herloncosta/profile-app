@@ -1,9 +1,10 @@
 @use "variables"
-
+@use "mixins"
 .section-footer
   p
     text-align: center
     padding: 2rem 0
+    @include mixins.textLight
     a
       color: variables.$primary
       text-decoration: none

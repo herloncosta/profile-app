@@ -4,7 +4,7 @@ export function About() {
   return (
     <section className="section-about">
       <div>
-        <h2>About me</h2>
+        <h2>About</h2>
       </div>
       <p>
         Oi, eu sou o Herlon Costa! Tenho 26 anos e estou em meu início de

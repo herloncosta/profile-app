@@ -8,8 +8,14 @@
     @include mixins.subtitle
 
   p
-    color: #ddd
+    color: variables.$gray
     text-align: justify
     letter-spacing: 1px
     line-height: 1.2rem
     margin-top: 1rem
+    transition: all 300ms ease
+    cursor: pointer
+    @include mixins.textLight
+
+    &:hover
+      color: variables.$light
