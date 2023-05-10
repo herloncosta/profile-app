@@ -3,9 +3,21 @@
 
 .section-techs
   @include mixins.lineSeparator
+  height: 56px
+  overflow: hidden
+  transition: all 1s ease
+  cursor: pointer
+
+  .group-title
+    display: flex
+    justify-content: space-between
+    align-items: center
 
   h2
     @include mixins.subtitle
+
+  svg
+    margin-top: 14px
 
   .tech-group
     display: flex
@@ -13,3 +25,10 @@
     column-gap: .4rem
     row-gap: .4rem
     margin-top: 1rem
+
+    @media (max-width: 576px)
+      justify-content: center
+
+.section-techs.open
+  height: auto
+  overflow: auto

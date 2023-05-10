@@ -1,11 +1,12 @@
-import "../styles/footer.sass";
+import '../styles/footer.sass'
 
 export function Footer() {
-  return (
-    <section className="section-footer">
-      <p>
-        Developed by <a href="https://github.com/herloncosta">Herlon Costa</a>.
-      </p>
-    </section>
-  );
+    return (
+        <section className="section-footer">
+            <p>
+                Developed by{' '}
+                <a href="https://github.com/herloncosta">Herlon Costa</a>.
+            </p>
+        </section>
+    )
 }
