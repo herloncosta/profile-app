@@ -10,14 +10,16 @@ export function About() {
                 Olá! Que bom te ter por aqui!
                 <br />
                 <br />
-                Eu sou o Herlon Costa, tenho 26 anos, moro em Simões Filho - BA,
-                região metropolitana de Salvador - BA.
+                Olá, sou Herlon Costa, um entusiasta da tecnologia e um novato no mundo do desenvolvimento de software.
                 <br />
                 <br />
-                Atualmente sou desenvolvedor Front End Júnior na empresa TOOI -
-                Take Of On Innovation, e estou focado nas tecnologias
-                TypeScript, React, Node e GraphQL. Apesar de uma breve
-                experiência com as tecnologias citadas acima.
+                Atualmente, ocupo o cargo de Gerente Administrativo em uma empresa de Telecomunicações localizada no 
+                Centro Financeiro de Salvador, Bahia. Apesar da minha carreira atual, estou no início da minha jornada 
+                no desenvolvimento de software, explorando as maravilhas da programação nas horas vagas. 
+                Tenho um interesse especial em JavaScript e tenho começado a aprender a criar aplicações web. 
+                Embora ainda esteja me familiarizando com conceitos e ferramentas, estou empolgado com as possibilidades 
+                que o desenvolvimento de software oferece. Estou ansioso para aprender, crescer e eventualmente contribuir 
+                de forma significativa para o mundo da tecnologia.
                 <br />
                 <br />
                 Abaixo estão os meios que você pode usar para entrar em contato
