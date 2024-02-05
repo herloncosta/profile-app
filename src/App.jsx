@@ -15,8 +15,8 @@ function App() {
                 <Header />
                 <Techs />
                 <About />
-                {/*<Contact />
-                <Footer /> */}
+                <Contact />
+                <Footer />
             </div>
         </ChakraProvider>
     )

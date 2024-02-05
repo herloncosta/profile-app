@@ -44,65 +44,65 @@ export function Techs() {
                 </AccordionButton>
                 <AccordionPanel className="text-white">
                     <Grid className="grid-cols-3 md:grid-cols-5 gap-1">
-                        <Tag className="bg-orange-600 rounded flex justify-center items-center gap-1 font-semibold">
+                        <Tag className="bg-orange-600 rounded flex justify-center items-center gap-1 font-medium">
                             <DiHtml5 />
-                            <TagLabel>HTML5</TagLabel>
+                            <TagLabel className="select-none">HTML5</TagLabel>
                         </Tag>
-                        <Tag className="bg-[#0496ff] rounded flex justify-center items-center gap-1 font-semibold">
+                        <Tag className="bg-[#0496ff] rounded flex justify-center items-center gap-1 font-medium">
                             <DiCss3 />
-                            <TagLabel>CSS3</TagLabel>
+                            <TagLabel className="select-none">CSS3</TagLabel>
                         </Tag>
-                        <Tag className="bg-[#e4c116] rounded flex justify-center items-center gap-1 text-black font-semibold">
+                        <Tag className="bg-[#e4c116] rounded flex justify-center items-center gap-1 text-black font-medium">
                             <SiJavascript />
-                            <TagLabel>Javascript</TagLabel>
+                            <TagLabel className="select-none">Javascript</TagLabel>
                         </Tag>
-                        <Tag className="bg-[#7b2cbf] rounded flex justify-center items-center gap-1 font-semibold">
+                        <Tag className="bg-[#7b2cbf] rounded flex justify-center items-center gap-1 font-medium">
                             <SiBootstrap />
-                            <TagLabel>Bootstrap</TagLabel>
+                            <TagLabel className="select-none">Bootstrap</TagLabel>
                         </Tag>
-                        <Tag className="bg-[#d81159] rounded flex justify-center items-center gap-1 font-semibold">
+                        <Tag className="bg-[#d81159] rounded flex justify-center items-center gap-1 font-medium">
                             <DiSass />
-                            <TagLabel>Sass</TagLabel>
+                            <TagLabel className="select-none">Sass</TagLabel>
                         </Tag>
-                        <Tag className="bg-[#07b6d5] rounded flex justify-center items-center gap-1 text-black font-semibold">
+                        <Tag className="bg-[#07b6d5] rounded flex justify-center items-center gap-1 text-black font-medium">
                             <SiTailwindcss />
-                            <TagLabel>Tailwind</TagLabel>
+                            <TagLabel className="select-none">Tailwind</TagLabel>
                         </Tag>
-                        <Tag className="bg-[#0474c4] rounded flex justify-center items-center gap-1 text-black font-semibold">
-                            <SiTypescript />
-                            <TagLabel>TypeScript</TagLabel>
+                        <Tag className="bg-[#0474c4] rounded flex justify-center items-center gap-1 text-black font-medium">
+                            <SiTypescript color="#fff" />
+                            <TagLabel className="select-none">TypeScript</TagLabel>
                         </Tag>
-                        <Tag className="bg-[#3C823B] rounded flex justify-center items-center gap-1 font-semibold">
-                            <DiNodejsSmall />
-                            <TagLabel>NodeJS</TagLabel>
+                        <Tag className="bg-[#3C823B] rounded flex justify-center items-center gap-1 font-medium">
+                            <DiNodejsSmall color="#000" />
+                            <TagLabel className="select-none">NodeJS</TagLabel>
                         </Tag>
-                        <Tag className="bg-[#00684a] rounded flex justify-center items-center gap-1 text-black font-semibold">
+                        <Tag className="bg-[#00684a] rounded flex justify-center items-center gap-1 text-black font-medium">
                             <SiMongodb />
-                            <TagLabel>MongoDB</TagLabel>
+                            <TagLabel className="select-none">MongoDB</TagLabel>
                         </Tag>
-                        <Tag className="bg-[#2e2e2e] rounded flex justify-center items-center gap-1 font-semibold">
+                        <Tag className="bg-[#2e2e2e] rounded flex justify-center items-center gap-1 font-medium">
                             <SiExpress />
-                            <TagLabel>Express</TagLabel>
+                            <TagLabel className="select-none">Express</TagLabel>
                         </Tag>
-                        <Tag className="bg-[#61DAFB] rounded flex justify-center items-center gap-1 text-black font-semibold">
+                        <Tag className="bg-[#61DAFB] rounded flex justify-center items-center gap-1 text-black font-medium">
                             <DiReact />
-                            <TagLabel>React</TagLabel>
+                            <TagLabel className="select-none">React</TagLabel>
                         </Tag>
-                        <Tag className="bg-[#E94D30] rounded flex justify-center items-center gap-1 font-semibold">
+                        <Tag className="bg-[#E94D30] rounded flex justify-center items-center gap-1 font-medium">
                             <DiGit />
-                            <TagLabel>Git</TagLabel>
+                            <TagLabel className="select-none">Git</TagLabel>
                         </Tag>
-                        <Tag className="bg-[#04051a] rounded flex justify-center items-center gap-1 font-semibold">
+                        <Tag className="bg-[#04051a] rounded flex justify-center items-center gap-1 font-medium">
                             <SiNextdotjs />
-                            <TagLabel>Next</TagLabel>
+                            <TagLabel className="select-none">Next</TagLabel>
                         </Tag>
-                        <Tag className="bg-[#1A1D22] rounded flex justify-center items-center gap-1 font-semibold">
+                        <Tag className="bg-[#1A1D22] rounded flex justify-center items-center gap-1 font-medium">
                             <DiGithubBadge />
-                            <TagLabel>GitHub</TagLabel>
+                            <TagLabel className="select-none">GitHub</TagLabel>
                         </Tag>
-                        <Tag className="bg-[#1A1D22] rounded flex justify-center items-center gap-1 font-semibold">
+                        <Tag className="bg-[#1A1D22] rounded flex justify-center items-center gap-1 font-medium">
                             <DiLinux />
-                            <TagLabel>Linux</TagLabel>
+                            <TagLabel className="select-none">Linux</TagLabel>
                         </Tag>
                     </Grid>
                 </AccordionPanel>
