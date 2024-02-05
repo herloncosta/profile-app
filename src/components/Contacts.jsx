@@ -1,8 +1,6 @@
 import { ImWhatsapp, ImGithub } from 'react-icons/im'
 import { SiInstagram, SiLinkedin } from 'react-icons/si'
 
-import '../styles/contact.sass'
-
 export function Contact() {
     return (
         <section className="section-contact">
@@ -16,10 +14,7 @@ export function Contact() {
                     </a>
                 </div>
                 <div>
-                    <a
-                        href="https://www.instagram.com/herloncosta_/"
-                        target="_blank"
-                    >
+                    <a href="https://www.instagram.com/herloncosta_/" target="_blank">
                         <SiInstagram size={36} className="instagram" />
                     </a>
                 </div>
@@ -29,10 +24,7 @@ export function Contact() {
                     </a>
                 </div>
                 <div>
-                    <a
-                        href="https://www.linkedin.com/in/herloncosta/"
-                        target="_blank"
-                    >
+                    <a href="https://www.linkedin.com/in/herloncosta/" target="_blank">
                         <SiLinkedin size={36} className="linkedin" />
                     </a>
                 </div>

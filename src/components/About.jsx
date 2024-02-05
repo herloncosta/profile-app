@@ -1,30 +1,38 @@
-import '../styles/about.sass'
+import {
+    Box,
+    Heading,
+    Text,
+    Accordion,
+    AccordionItem,
+    AccordionButton,
+    AccordionIcon,
+    AccordionPanel,
+} from '@chakra-ui/react'
 
 export function About() {
     return (
-        <section className="section-about">
-            <div>
-                <h2>About</h2>
-            </div>
-            <p>
-                Olá! Que bom te ter por aqui!
-                <br />
-                <br />
-                Olá, sou Herlon Costa, um entusiasta da tecnologia e um novato no mundo do desenvolvimento de software.
-                <br />
-                <br />
-                Atualmente, ocupo o cargo de Gerente Administrativo em uma empresa de Telecomunicações localizada no 
-                Centro Financeiro de Salvador, Bahia. Apesar da minha carreira atual, estou no início da minha jornada 
-                no desenvolvimento de software, explorando as maravilhas da programação nas horas vagas. 
-                Tenho um interesse especial em JavaScript e tenho começado a aprender a criar aplicações web. 
-                Embora ainda esteja me familiarizando com conceitos e ferramentas, estou empolgado com as possibilidades 
-                que o desenvolvimento de software oferece. Estou ansioso para aprender, crescer e eventualmente contribuir 
-                de forma significativa para o mundo da tecnologia.
-                <br />
-                <br />
-                Abaixo estão os meios que você pode usar para entrar em contato
-                comigo. Então, vamos lá!
-            </p>
-        </section>
+        <Accordion allowMultiple>
+            <AccordionItem>
+                <AccordionButton>
+                    <Box as="span" flex="1" textAlign="left">
+                        <Heading className="py-4 text-xl text-sky-400">About</Heading>
+                    </Box>
+                    <AccordionIcon className="bg-sky-400 rounded-full" />
+                </AccordionButton>
+                <AccordionPanel pb={4} className="text-white">
+                    <Text>
+                        Olá, sou Herlon Costa, graduando em Análise e Desenvolvimento de Sistemas,
+                        pela Universidade Estácio de Sá, e estou embarcando na emocionante jornada
+                        do desenvolvimento de software, com foco especial em JavaScript para criar
+                        aplicações web. <br /> <br /> Estou genuinamente empolgado com as infinitas
+                        possibilidades que o desenvolvimento de software oferece. A cada linha de
+                        código, descubro novos horizontes e desafios que me impulsionam a aprender e
+                        crescer. <br /> <br /> Junte-se a mim nesta jornada! Vamos explorar o vasto
+                        universo da programação juntos e criar algo incrível. Conecte-se para
+                        trocarmos ideias e experiências!
+                    </Text>
+                </AccordionPanel>
+            </AccordionItem>
+        </Accordion>
     )
 }

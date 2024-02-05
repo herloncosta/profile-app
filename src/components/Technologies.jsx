@@ -16,73 +16,97 @@ import {
     SiTailwindcss,
     SiNextdotjs,
     SiExpress,
+    SiMongodb,
 } from 'react-icons/si'
 
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
-
-import '../styles/technologies.sass'
-import { useState } from 'react'
+import {
+    Grid,
+    Box,
+    Heading,
+    Accordion,
+    AccordionItem,
+    AccordionButton,
+    AccordionIcon,
+    AccordionPanel,
+    Tag,
+    TagLabel,
+} from '@chakra-ui/react'
 
 export function Techs() {
-    const [isExpanded, setIsExpanded] = useState(false)
-
-    const handleExpand = () => {
-        setIsExpanded(!isExpanded)
-    }
-
     return (
-        <section
-            className={`section-techs ${isExpanded ? 'open' : ''}`}
-            onClick={handleExpand}
-        >
-            <div className="group-title">
-                <h2>Technologies</h2>
-                {isExpanded ? <IoIosArrowUp /> : <IoIosArrowDown />}
-            </div>
-            <div className="tech-group">
-                <Technology name="HTML5" bg="#E96228" icon={<DiHtml5 />} />
-                <Technology name="CSS3" bg="#0496ff" icon={<DiCss3 />} />
-                <Technology
-                    name="JS"
-                    text="#000"
-                    bg="#e4c116"
-                    icon={<SiJavascript />}
-                />
-                <Technology
-                    name="Bootstrap"
-                    bg="#7b2cbf"
-                    icon={<SiBootstrap />}
-                />
-                <Technology name="Sass" bg="#d81159" icon={<DiSass />} />
-                <Technology
-                    name="Tailwind"
-                    text="#000"
-                    bg="#07b6d5"
-                    icon={<SiTailwindcss />}
-                />
-                <Technology name="TS" bg="#0474c4" icon={<SiTypescript />} />
-                <Technology
-                    name="Node"
-                    text="#000"
-                    bg="#3C823B"
-                    icon={<DiNodejsSmall />}
-                />
-                <Technology name="Express" text="#000" icon={<SiExpress />} />
-                <Technology
-                    name="React"
-                    text="#000"
-                    bg="#61DAFB"
-                    icon={<DiReact />}
-                />
-                <Technology name="Git" bg="#E94D30" icon={<DiGit />} />
-                <Technology name="Next" bg="#04051a" icon={<SiNextdotjs />} />
-                <Technology
-                    name="GitHub"
-                    bg="#1A1D22"
-                    icon={<DiGithubBadge />}
-                />
-                <Technology name="Linux" bg="#1A1D22" icon={<DiLinux />} />
-            </div>
-        </section>
+        <Accordion allowMultiple marginTop={14}>
+            <AccordionItem>
+                <AccordionButton>
+                    <Box as="span" flex="1" textAlign="left">
+                        <Heading className="py-4 text-xl text-sky-400">Technologies</Heading>
+                    </Box>
+                    <AccordionIcon className="bg-sky-400 rounded-full" />
+                </AccordionButton>
+                <AccordionPanel className="text-white">
+                    <Grid className="grid-cols-3 md:grid-cols-5 gap-1">
+                        <Tag className="bg-orange-600 rounded flex justify-center items-center gap-1 font-semibold">
+                            <DiHtml5 />
+                            <TagLabel>HTML5</TagLabel>
+                        </Tag>
+                        <Tag className="bg-[#0496ff] rounded flex justify-center items-center gap-1 font-semibold">
+                            <DiCss3 />
+                            <TagLabel>CSS3</TagLabel>
+                        </Tag>
+                        <Tag className="bg-[#e4c116] rounded flex justify-center items-center gap-1 text-black font-semibold">
+                            <SiJavascript />
+                            <TagLabel>Javascript</TagLabel>
+                        </Tag>
+                        <Tag className="bg-[#7b2cbf] rounded flex justify-center items-center gap-1 font-semibold">
+                            <SiBootstrap />
+                            <TagLabel>Bootstrap</TagLabel>
+                        </Tag>
+                        <Tag className="bg-[#d81159] rounded flex justify-center items-center gap-1 font-semibold">
+                            <DiSass />
+                            <TagLabel>Sass</TagLabel>
+                        </Tag>
+                        <Tag className="bg-[#07b6d5] rounded flex justify-center items-center gap-1 text-black font-semibold">
+                            <SiTailwindcss />
+                            <TagLabel>Tailwind</TagLabel>
+                        </Tag>
+                        <Tag className="bg-[#0474c4] rounded flex justify-center items-center gap-1 text-black font-semibold">
+                            <SiTypescript />
+                            <TagLabel>TypeScript</TagLabel>
+                        </Tag>
+                        <Tag className="bg-[#3C823B] rounded flex justify-center items-center gap-1 font-semibold">
+                            <DiNodejsSmall />
+                            <TagLabel>NodeJS</TagLabel>
+                        </Tag>
+                        <Tag className="bg-[#00684a] rounded flex justify-center items-center gap-1 text-black font-semibold">
+                            <SiMongodb />
+                            <TagLabel>MongoDB</TagLabel>
+                        </Tag>
+                        <Tag className="bg-[#2e2e2e] rounded flex justify-center items-center gap-1 font-semibold">
+                            <SiExpress />
+                            <TagLabel>Express</TagLabel>
+                        </Tag>
+                        <Tag className="bg-[#61DAFB] rounded flex justify-center items-center gap-1 text-black font-semibold">
+                            <DiReact />
+                            <TagLabel>React</TagLabel>
+                        </Tag>
+                        <Tag className="bg-[#E94D30] rounded flex justify-center items-center gap-1 font-semibold">
+                            <DiGit />
+                            <TagLabel>Git</TagLabel>
+                        </Tag>
+                        <Tag className="bg-[#04051a] rounded flex justify-center items-center gap-1 font-semibold">
+                            <SiNextdotjs />
+                            <TagLabel>Next</TagLabel>
+                        </Tag>
+                        <Tag className="bg-[#1A1D22] rounded flex justify-center items-center gap-1 font-semibold">
+                            <DiGithubBadge />
+                            <TagLabel>GitHub</TagLabel>
+                        </Tag>
+                        <Tag className="bg-[#1A1D22] rounded flex justify-center items-center gap-1 font-semibold">
+                            <DiLinux />
+                            <TagLabel>Linux</TagLabel>
+                        </Tag>
+                    </Grid>
+                </AccordionPanel>
+            </AccordionItem>
+        </Accordion>
     )
 }

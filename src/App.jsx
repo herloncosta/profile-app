@@ -3,17 +3,22 @@ import { Contact } from './components/Contacts'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Techs } from './components/Technologies'
-import './styles/globals.sass'
+
+import { ChakraProvider } from '@chakra-ui/react'
+
+import './index.css'
 
 function App() {
     return (
-        <div className="App">
-            <Header />
-            <Techs />
-            <About />
-            <Contact />
-            <Footer />
-        </div>
+        <ChakraProvider theme="dark">
+            <div className="container">
+                <Header />
+                <Techs />
+                <About />
+                {/*<Contact />
+                <Footer /> */}
+            </div>
+        </ChakraProvider>
     )
 }
 

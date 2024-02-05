@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(14, 12, 12);
+}
+
+.container {
+    width: 700px;
+    max-width: 90%;
+    margin: 0 auto;
+}
