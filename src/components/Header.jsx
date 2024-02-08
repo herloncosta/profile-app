@@ -5,7 +5,7 @@ export function Header() {
     return (
         <header>
             <Box className="flex justify-center py-5">
-                <Heading className="text-sky-400 py-5 font-bold text-3xl select-none">
+                <Heading className="text-sky-400 py-5 font-bold text-3xl select-none animate-pulse">
                     {'<DevPro/>'}
                 </Heading>
             </Box>

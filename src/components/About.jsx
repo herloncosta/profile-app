@@ -11,7 +11,7 @@ import {
 
 export function About() {
     return (
-        <Accordion allowMultiple>
+        <Accordion allowMultiple className="border-t-2 border-t-sky-400">
             <AccordionItem>
                 <AccordionButton>
                     <Box as="span" flex="1" textAlign="left">

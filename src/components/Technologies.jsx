@@ -34,9 +34,9 @@ import {
 
 export function Techs() {
     return (
-        <Accordion allowMultiple marginTop={14}>
+        <Accordion allowMultiple className="my-4">
             <AccordionItem>
-                <AccordionButton>
+                <AccordionButton className="border-t-2 border-t-sky-400">
                     <Box as="span" flex="1" textAlign="left">
                         <Heading className="py-4 text-xl text-sky-400">Technologies</Heading>
                     </Box>
