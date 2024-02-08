@@ -20,7 +20,7 @@ export function Header() {
                 </Box>
                 <Box className="mt-5 text-center">
                     <Heading className="text-slate-200 text-3xl select-none">Herlon Costa</Heading>
-                    <Text className="text-slate-400 text-xl select-none">
+                    <Text className="text-slate-400 text-xl select-none pb-10">
                         Fullstack Web Developer
                     </Text>
                 </Box>
