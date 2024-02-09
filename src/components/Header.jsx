@@ -1,7 +1,23 @@
 import profile from '../assets/profile.jpeg'
 import { Box, Image, Heading, Text } from '@chakra-ui/react'
+import { useEffect, useRef } from 'react'
+import Typed from 'typed.js'
 
 export function Header() {
+    const typedContainer = useRef(null)
+
+    useEffect(() => {
+        const typed = new Typed(typedContainer.current, {
+            strings: ['fullstack web developer'],
+            typeSpeed: 100,
+            loop: false,
+        })
+
+        return () => {
+            typed.destroy()
+        }
+    }, [])
+
     return (
         <header>
             <Box className="flex justify-center py-5">
@@ -19,8 +35,13 @@ export function Header() {
                     />
                 </Box>
                 <Box className="mt-5 text-center">
-                    <Heading className="text-slate-200 text-3xl select-none">Herlon Costa</Heading>
-                    <Text className="text-slate-400 text-xl select-none pb-10">
+                    <Heading className="text-slate-200 text-3xl font-bold select-none mt-6">
+                        Herlon Costa
+                    </Heading>
+                    <Text
+                        ref={typedContainer}
+                        className="text-slate-400 text-lg uppercase font-medium tracking-widest select-none pb-10"
+                    >
                         Fullstack Web Developer
                     </Text>
                 </Box>
