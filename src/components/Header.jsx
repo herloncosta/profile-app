@@ -10,7 +10,7 @@ export function Header() {
         const typed = new Typed(typedContainer.current, {
             strings: ['fullstack web developer'],
             typeSpeed: 100,
-            loop: false,
+            showCursor: false,
         })
 
         return () => {
@@ -40,7 +40,7 @@ export function Header() {
                     </Heading>
                     <Text
                         ref={typedContainer}
-                        className="text-slate-400 text-lg uppercase font-medium tracking-widest select-none pb-10"
+                        className="text-slate-400 text-lg uppercase font-medium tracking-widest select-none"
                     >
                         Fullstack Web Developer
                     </Text>

@@ -1,23 +1,22 @@
-import { About } from './components/About'
 import { Contact } from './components/Contacts'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
-import { Techs } from './components/Technologies'
+import { Presentation } from './components/Presentation'
 
 import { ChakraProvider } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 
 import './index.css'
 
 function App() {
     return (
         <ChakraProvider theme="dark">
-            <div className="container">
+            <Box as="div" className="container flex flex-col gap-8">
                 <Header />
-                <Techs />
-                <About />
+                <Presentation />
                 <Contact />
                 <Footer />
-            </div>
+            </Box>
         </ChakraProvider>
     )
 }
