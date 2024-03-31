@@ -27,16 +27,42 @@ import {
     AccordionButton,
     AccordionIcon,
     AccordionPanel,
-    Text,
 } from '@chakra-ui/react'
 import { CustomTag } from './CustomTag'
+
+function CustomText() {
+    return (
+        <div className="flex flex-col gap-4 sm:text-lg">
+            <p>
+                Graduando em <strong>Análise e Desenvolvimento de Sistemas</strong>, com formação
+                técnica em Redes de Computadores.
+            </p>
+            <p>
+                <strong>
+                    Em transição de carreira, buscando atuar como desenvolvedor de software
+                </strong>
+                , sempre buscando aprimorar minhas habilidades e conhecimentos.
+            </p>
+            <div>
+                <p>
+                    <strong>Soft Skills:</strong> Comunicação, Proatividade, Resolução de Problemas,
+                    Liderança
+                </p>
+                <p>
+                    <strong>Hard Skills:</strong> HTML, CSS, Javascript, ReactJS, NodeJS, Tailwind,
+                    MongoDB, PostgresSQL, API REST, Git, Github, Linux
+                </p>
+            </div>
+        </div>
+    )
+}
 
 export function Presentation() {
     return (
         <Accordion allowMultiple className="my-4">
             <AccordionItem>
                 <AccordionButton className="border-t-2 border-t-sky-400">
-                    <Box as="span" flex="1" textAlign="left">
+                    <Box className="flex-1 text-left">
                         <Heading className="py-2 text-xl text-sky-400">Habilidades</Heading>
                     </Box>
                     <AccordionIcon className="bg-sky-400 rounded-full" />
@@ -63,25 +89,16 @@ export function Presentation() {
                 </AccordionPanel>
             </AccordionItem>
 
-            <AccordionItem>
-                <AccordionButton className="border-t-2 border-t-sky-400">
-                    <Box as="span" flex="1" textAlign="left">
+            <AccordionItem className="pt-4 text-white">
+                <AccordionButton className="border-t-2 border-t-sky-400 text-black">
+                    <Box className="flex-1 text-left">
                         <Heading className="py-2 text-xl text-sky-400">Um pouco sobre mim</Heading>
                     </Box>
                     <AccordionIcon className="bg-sky-400 rounded-full" />
                 </AccordionButton>
 
-                <AccordionPanel pb={4} className="text-white">
-                    <Text>
-                        Graduando em Análise e Desenvolvimento de Sistemas, com formação técnica em Redes de Computadores.</br>
-
-                        Em transição de carreira, buscando atuar como Desenvolvedor, sempre buscando aprimorar minhas habilidades e conhecimentos.</br>
-
-                        Hard Skills: HTML, CSS, Javascript, ReactJS, NodeJS, Tailwind, MongoDB, PostgresSQL, API REST, Git, Github, Linux</br>
-                        Soft Skills: Comunicação, Proatividade, Resolução de Problemas, Liderança</br></br>
-
-                        Conecte-se comigo!
-                    </Text>
+                <AccordionPanel>
+                    <CustomText />
                 </AccordionPanel>
             </AccordionItem>
         </Accordion>
