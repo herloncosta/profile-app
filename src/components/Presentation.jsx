@@ -73,15 +73,14 @@ export function Presentation() {
 
                 <AccordionPanel pb={4} className="text-white">
                     <Text>
-                        Olá, sou Herlon Costa, graduando em Análise e Desenvolvimento de Sistemas,
-                        pela Universidade Estácio de Sá, e estou embarcando na emocionante jornada
-                        do desenvolvimento de software, com foco especial em JavaScript para criar
-                        aplicações web. <br /> <br /> Estou genuinamente empolgado com as infinitas
-                        possibilidades que o desenvolvimento de software oferece. A cada linha de
-                        código, descubro novos horizontes e desafios que me impulsionam a aprender e
-                        crescer. <br /> <br /> Junte-se a mim nesta jornada! Vamos explorar o vasto
-                        universo da programação juntos e criar algo incrível. Conecte-se para
-                        trocarmos ideias e experiências!
+                        Graduando em Análise e Desenvolvimento de Sistemas, com formação técnica em Redes de Computadores.</br>
+
+                        Em transição de carreira, buscando atuar como Desenvolvedor, sempre buscando aprimorar minhas habilidades e conhecimentos.</br>
+
+                        Hard Skills: HTML, CSS, Javascript, ReactJS, NodeJS, Tailwind, MongoDB, PostgresSQL, API REST, Git, Github, Linux</br>
+                        Soft Skills: Comunicação, Proatividade, Resolução de Problemas, Liderança</br></br>
+
+                        Conecte-se comigo!
                     </Text>
                 </AccordionPanel>
             </AccordionItem>
